@@ -1,10 +1,14 @@
-# Title (replace with your title)
+# Regex Tutorial : Match URL with Regular Expressions (Regex)
 
-Introductory paragraph (replace this with your text)
+URL Regex: A regualr or rathional expression defined as characters in a pattern or a sequence that replace or find string operations which may be useful locating a string in a URL.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+A Regex is useful in matching a URL in order to locate special text patterns.
+
+```
+https?:\/\/(www\.)?[\d-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)
+```
 
 ## Table of Contents
 
@@ -23,6 +27,9 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+Anchors are used at the beginning and end of searches to check if a string matches a certain pattern, however they themselves do not match any characters. They are there to affirm a string matches a location. Achors will create parameters. 
+* Use the ```^``` anchor to match the beginning of the text. 
+* Use the ```$``` anchor to match the end of the text.
 
 ### Quantifiers
 
