@@ -84,14 +84,40 @@ Capturing Group is a part of a pattern that can be enclosed in a parentheses () 
 
 ### Bracket Expressions
 
+Bracket expressions are matching or non-matching list expression and consists of one or more expressions that will be found in square brackets []
+* It represents a special character class and is a quantified rule providing range construct. 
+* They adapt to a users or applications locale. 
+
 ### Greedy and Lazy Match
+
+ *  A greedy match is a search that will try to find the longest possible string, 
+ *  A lazy match search will find the smallest possible string.
+
+ Some Greedy quantifiers are:
+* `+` = one or more revised gist
+* `*` = Zero or more
+* `{2,4}` = Two to four times as greedy
+
+A Lazy Qualifiers is:
+* `?`
 
 ### Boundaries
 
+Boundaries are similar to an anchor and uses the expression \b for word boundaries and \B for non-word boundaries. 
+* They are a zero-length match that marks the beginning and end of an alphanumerical sequence and will make it easier to find whole words. 
+The beginning of this expression:
+*  ```\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)``` is searching for a whole word or digit.
+
 ### Back-references
 
-### Look-ahead and Look-behind
+Backreferences are filters used to match the same text previously matched by a capturing group. 
+* An example would be when you desire to search for a repeated word, 
+* the first match could use a pattern that extracts a signle word, 
+* the second would be a back reference that referes to the captured group. 
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Ben Tantillo is a recent University of Oregon Bootcamp graduate. He is trying to start a new career in web development, and is very excited for what the fure holds. He likes hiking during the winter, camping in the summer. He lives in Portland, OR and is enjoying exploring the PNW. 
+
+* [Ben's Github](https://github.com/BTantillo)
+* [Ben's Email](mailto:bentantillo@gmail.com)
