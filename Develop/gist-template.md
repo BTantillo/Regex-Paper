@@ -27,13 +27,23 @@ https?:\/\/(www\.)?[\d-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-
 ## Regex Components
 
 ### Anchors
+
 Anchors are used at the beginning and end of searches to check if a string matches a certain pattern, however they themselves do not match any characters. They are there to affirm a string matches a location. Achors will create parameters. 
 * Use the ```^``` anchor to match the beginning of the text. 
 * Use the ```$``` anchor to match the end of the text.
 
 ### Quantifiers
 
+Quantifiers will measure and set the limit on the number of characters that we are wanting to match our Regex:
+* ```+``` Searches the pattern one or more times,
+* ```?``` Searches the pattern zero or one time
+* ```*``` Searches the pattern zero or more times
+* ``` https? ``` for example. The ? will make the preceeding time optional.
+
+
 ### OR Operator
+
+The OR operator's purpose is to match the characters on the left or right of the operator, serving as an or, as in and/or. Using the | as in m|M would match either m or an M from the string. If we had used https?:\/\/(www\.)?[\d-a|A it would search for a OR A.
 
 ### Character Classes
 
